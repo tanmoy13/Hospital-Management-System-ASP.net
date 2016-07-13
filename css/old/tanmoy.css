@@ -1,0 +1,305 @@
+body {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#farouter {
+	background: #FFF;
+	width: 1100px; 
+	border: 1px solid #3A291F;
+	margin: 20px auto 20px auto;
+	text-align: left;  
+	}
+
+
+#footer{
+	background: #8F656F;
+	text-align: center;
+	color: white;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 12px;
+	margin: 8px 8px 8px 8px;
+}
+
+	
+	
+#headermain {
+	letter-spacing: 0.2em;
+	margin: 8px 8px 0 8px;
+	 
+	font: normal 100% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; 
+	height: 260px;
+   /* background-image: url('images/header.jpg'); */
+
+   
+
+	}
+
+#main {
+	padding-left:35px;
+	}
+
+	
+
+	
+#nav {
+	padding-left: 10px;border-left:1px dashed #eee;
+	}
+	
+#logo {
+	padding-top: 25px; 
+	padding-left: 12px;
+	}
+	
+#hmenu {
+	margin: 8px; 
+	
+	}
+	
+#hnav {
+	margin: 0;
+	padding: 0;
+	}
+	
+#clearer { 
+	clear: both; 
+	margin: 0; padding: 0;
+	}
+	
+
+
+body {
+	background: #FFF url(images/bodybg.gif) top left repeat-x; 
+	color:#333;
+	}
+	
+#header { 
+	color: #B53E1E; 
+	text-decoration: none; 
+	font-size: 50px;
+	}
+	
+		
+#hmenu { 
+	background: #8F656F;
+	}
+	
+#hnav {
+	background: #8F656F;
+	}
+
+a {
+	color: #8C0000; 
+	text-decoration: none; 
+	}
+	
+a:visited { 
+	color: #8C0000; 
+	text-decoration: none; 
+	}
+	
+a:hover { 
+	color: #8C0000; 
+	text-decoration: underline; 
+	}
+	
+	
+h2 {	
+	color: #8C0000;
+	font-size: 24px;
+	font-weight: normal;
+	}
+	
+h3 a {
+	color: #8C0000; 
+	}
+	
+h3 a:hover {
+	color: #8C0000;
+	}
+	
+h3 a:visited {
+	color: #8C0000;
+	}
+	
+
+
+	
+	
+	
+h1 { 	
+	margin: 0; 
+	padding: 20px; 
+	text-align: right; 
+	color: #F2EEEC;
+	font-size:2em;
+	}
+	
+
+h2 {
+	font: 150% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  	letter-spacing: 0.2em; 
+  	margin: 0 20px 20px 0; 
+  	padding: 20px 0 0 0; 
+  	}
+  	
+h2#tagline {
+	margin:0; 
+	margin-right: 25px; 
+	padding:0;
+	text-align: right;
+	color: black;
+	border: 0;
+	font-size:25px;
+	}
+
+  	
+h3 {
+	font: 24px 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; 
+	margin-left: 0; 
+	margin-top: 30px;
+	color: #8C0000;  
+	}
+	
+h3#comments { 
+	margin-left: 20px;
+	}
+	
+h3#respond { 
+	margin-left: 20px; 
+	}
+	
+h4 {
+	font-size: 16px;
+	font-weight: normal;
+	}
+	
+
+	
+img {
+	margin: 0px;
+	padding: 2px;
+	}
+		
+
+#nav ul li h2 {
+  	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  	font-weight: normal;
+	letter-spacing: 0.1em;
+	border: 0;
+	text-align: left;
+	padding-left:0;
+	margin-left: 0;
+	}
+
+
+#nav ul ul ul.children {
+	font-size: 100%;
+	padding-left: 15px;
+	}
+
+
+#nav { 
+	width: 170px; float:right;
+	}
+
+#nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 95%;
+	}
+
+#nav a {
+	font-size:1.1em;
+	
+text-decoration: none;
+	}
+
+#nav a:link, #navlist a:visited {
+	text-decoration: none;
+	}
+
+#nav a:hover {
+	color: #000;
+text-decoration: underline;
+	}
+
+#themeswitcher {
+	font-size: 8px;
+	}
+
+
+#hnav ul {
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 0;
+	margin-top: 0;
+	margin-left: 0;
+	background-color: #8F656F;
+	color: #F2EEEC;
+	width: 100%;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	line-height: 18px;
+	}
+
+#hnav ul li {
+	display: inline;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	}
+
+#hnav ul li a {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	color: #F2EEEC;
+	text-decoration: none;
+	border-right: 1px solid #F2EEEC;
+	}
+
+#hnav ul li a:hover {
+	background: #F2EEEC;
+	color: #3A291F;
+	}
+
+
+
+.glyphicon {
+    margin-right: 8px;
+    top: 1px;
+    left: -48px;
+    width: 853px;
+}
+
+ #mainbody {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 958px;
+    margin-left: 10px;
+}
+
+
+#paragraph {
+    font-size: 15px;
+}
+
+.modal-header,.hh3, .close {
+            background-color: #0099dd;
+            color: white !important;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .modal-footer {
+            background-color: #f9f9f9;
+        }
+

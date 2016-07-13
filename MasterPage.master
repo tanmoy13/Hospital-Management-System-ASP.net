@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="Stylesheet" type="text/css" href="css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsiveslides.css" />
+    <link rel="stylesheet" type="text/css" href="css/registrationForm.css" />
+    <link rel="stylesheet" type="text/css" href="css/ImageFlip.css" />
+    <link rel="Stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="Stylesheet" type="text/css" href="css/tanmoy.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+     <script>
+         // You can also use "$(window).load(function() {"
+         $(function () {
+             // Slideshow 1
+             $("#slider1").responsiveSlides({
+                 maxwidth: 2500,
+                 speed: 600
+             });
+         });
+    </script>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+
+        <div id="farouter">
+            <div id="headermain">
+
+                <!-- <h1 id="header">Online Hospital</h1>
+            <h2 id="tagline">We serve for Humanity</h2> !-->
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="ImG/New folder/2.jpg" alt="Chania" />
+                            <div class="carousel-caption">
+                                <h1 id="header">Apollo Online Hospital</h1>
+                                <h2 id="tagline">We serve for Humanity</h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+                <div id="hmenu">
+                    <div id="hnav">
+
+                        <ul id="navlist">
+                            <li><a href="home.aspx"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a href="appointment.aspx"><span class="glyphicon glyphicon-tags"></span>Appointment</a></li>
+                        <li><a href="Doctorslist.aspx"><span class="glyphicon glyphicon-folder-open"></span>Doctors Record</a></li>
+                        <li><a href="about.aspx"><span class="glyphicon glyphicon-menu-hamburger"></span>About</a></li>
+                        <li><a href="Contact.aspx"><span class="glyphicon glyphicon-phone-alt"></span>Contact</a></li>
+                        <% if (Session["Login"] == null)
+                           { %>
+                        <li><a data-toggle="modal" href="#myModal"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                        <li><a href="Registration.aspx"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+                        <% } %>
+                        <%  else
+                           { %>
+                        <li><a href="Logout.aspx"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                        <%} %>
+                         <li><a href="AdminLogin.aspx"><span class="glyphicon glyphicon-lock"></span>Admin</a></li>
+                        <li>
+                            <asp:Label ID="Label1" runat="server" ForeColor="#8F656F"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="Medium"></asp:Label>
+                            
+                        </li>
+                        </ul>
+
+                          <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header" style="padding: 35px 50px;">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="hh3"><span class="glyphicon glyphicon-lock"></span> Login</h3>
+                                </div>
+                                <div class="modal-body" style="padding: 40px 50px;">
+                                   
+                                        <div class="form-group">
+                                            <label for="usrname"><span class="glyphicon glyphicon-user"></span>Username</label>
+                                            <asp:TextBox ID="TextBox1" runat="server" class="form-control">Enter username</asp:TextBox>
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Password</label>
+
+                                            <asp:TextBox ID="TextBox2" TextMode="Password" runat="server" class="form-control"></asp:TextBox>
+                                            
+                                        </div>
+                                        <div class="checkbox">
+                                           
+                                                <label>
+                                                    <asp:CheckBox ID="CheckBox1" runat="server"/>Remember me</label>
+                                            
+                                            
+                                        </div>
+                                        
+                                        <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-block" Text="Login" OnClick="Button1_Click1" />
+                                        
+                                   
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Cancel</button>
+                                    <p>Not a member? <a href="Registration.aspx">Sign Up</a></p>
+                                    <p>Forgot <a href="forgetpass.aspx">Password?</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+
+                <div id="main">
+
+
+
+                    <div id="content">
+
+                    
+                        <div>
+
+                            
+                            
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+
+                <br/>
+                <br/>
+                <div id="footer">
+
+                    <p>Footer will be added here</p>
+                </div>
+            
+        </div>
+
+    </form>
+</body>
+</html>
